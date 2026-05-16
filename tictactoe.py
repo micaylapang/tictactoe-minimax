@@ -1,6 +1,4 @@
-# Name: Micayla Pang 
 # Date: 12/4/24
-
 def successors(state, turn):
    sli = [i for i in range(len(state)) if state[i] == '.'] #indexes of all blank spots
    ret = [(state, state[0:i] + turn + state[i+1:]) for i in sli] #
